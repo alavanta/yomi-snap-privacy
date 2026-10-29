@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yomi-Snap Privacy Policy</title>
+<style>
+  :root { --bg: #fbfaf8; --ink: #1d1c1a; --soft: #5d5a55; --rule: #e4e1dc; --accent: #2f5d8a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161615; --ink: #ecebe8; --soft: #a5a29c; --rule: #2e2d2b; --accent: #8db7e0; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Noto Sans JP", sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 1.5rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.05rem; margin: 28px 0 6px; padding-top: 16px; border-top: 1px solid var(--rule); }
+  p, li { color: var(--ink); }
+  .meta, .note { color: var(--soft); font-size: 0.875rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.875rem; margin: 8px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px 6px 0; border-bottom: 1px solid var(--rule); }
+  th { color: var(--soft); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Yomi-Snap Privacy Policy</h1>
+  <p class="meta">Effective 14 October 2026</p>
+
+  <p>
+    Yomi-Snap helps you read Japanese and English on your screen: you capture the screen, tap a word, and
+    see what it means. This policy explains what the app reads, what stays on your device, and what is
+    sent elsewhere and why. It applies to Yomi-Snap on Android, Windows, macOS, Linux and iOS.
+  </p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li>Reading your screen happens <strong>on your device</strong>. Pictures of your screen are never uploaded.</li>
+    <li>Your history, saved words and any kept screenshots stay <strong>on your device</strong>.</li>
+    <li>Text leaves your device only when you <strong>ask for an AI translation</strong> (or ask AI to fill a saved word):
+      the word and a little of the text around it go to our server and our AI providers.</li>
+    <li>There are no accounts. We do not sell your data and we show no ads.</li>
+  </ul>
+
+  <h2>What happens on your device</h2>
+  <p>
+    <strong>Screen capture.</strong> On Android, when you start the floating 読 button, Android asks your permission to
+    capture the screen; you can share one app or the whole screen, and stop at any time from the status bar.
+    Each time you tap 読, Yomi-Snap takes one still picture and recognises its text on the device. It records no
+    video and no sound. On a computer, a capture is taken when you press the lookup shortcut.
+  </p>
+  <p>
+    <strong>Kept on your device:</strong> the words you look up and save, your lookup history, the text of each scan,
+    and — while <em>Save word images</em> is on (Settings) — the picture of each scan, so a saved word can show where you
+    read it. You can turn that setting off, delete saved words, or uninstall the app to remove all of it.
+    Android backups and device-to-device transfer are turned off for this data.
+  </p>
+
+  <h2>What is sent, to whom, and why</h2>
+  <table>
+    <thead><tr><th>When</th><th>What is sent</th><th>To</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>You ask for an AI translation or explanation of a word, or ask AI to fill in a saved word</td>
+        <td>The word, its sentence, up to two lines before and after it, up to eight other short lines of text on the
+          screen, the dictionary's meanings for the word, and the languages you read and explain in. On a computer, also
+          the name of the app and the window title you were reading, which helps with names and terms. If you fill in
+          <em>Reading or watching</em>, that title too; and on Android, if you turn on <em>Use what's playing</em>, the name of
+          the app playing media and the title it shows (below).</td>
+        <td>Our AI server, which passes it to an AI provider (below) and returns the answer</td>
+      </tr>
+      <tr>
+        <td>The first time AI translation is used, and with each AI request</td>
+        <td>A random device identifier and token the app creates (not linked to your name, phone number or advertising ID),
+          the app version, and the kind of device ("Android phone", "Mac")</td>
+        <td>Our AI server, to count each device's daily free uses and stop abuse</td>
+      </tr>
+      <tr>
+        <td>You buy Pro on Google Play, or the app starts with Pro bought</td>
+        <td>Google Play's purchase token and product id. We never see your payment details.</td>
+        <td>Our AI server, which checks the purchase with Google Play</td>
+      </tr>
+      <tr>
+        <td>You enter a licence key</td>
+        <td>The key</td>
+        <td>Our AI server, to put this device on that licence</td>
+      </tr>
+      <tr>
+        <td>The app downloads dictionaries or interface updates</td>
+        <td>An ordinary web request (no personal data)</td>
+        <td>Our file server</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Like any web server, ours sees the network (IP) address a request comes from. We do not store it: we keep only a
+    one-way, salted fingerprint of it, used to limit how many requests one network can make. Our server runs on
+    Supabase (servers in Singapore).
+  </p>
+
+  <h2>"Use what's playing" (Android, optional)</h2>
+  <p>
+    Off unless you turn it on in Settings › Translation. It needs Android's <em>notification access</em> for Yomi-Snap,
+    which you give on Android's own settings page and can take back there at any time. Android warns that this access
+    could let an app read your notifications; <strong>Yomi-Snap reads none</strong>. When you tap 読, it only asks Android
+    which app is playing a video or song and the title that app shows (for example "Netflix" and the episode's name),
+    and sends that with your AI translation as described above. It is not stored by us, and nothing is read when you
+    are not tapping 読.
+  </p>
+
+  <h2>AI providers</h2>
+  <p>
+    AI answers come from <strong>Google (Gemini API)</strong> and, when Gemini cannot answer, <strong>OpenAI</strong>.
+    They receive the text described above, but not your device identifier, network address or licence; OpenAI receives
+    only a one-way fingerprint of the device so it can detect abuse.
+  </p>
+  <ul>
+    <li><strong>Google Gemini.</strong> We currently use Gemini's free tier. Under Google's terms for it, Google may use
+      what is sent to improve its products, and people at Google may read it. Please do not ask for AI translations
+      of text that contains personal or sensitive information.
+      <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>,
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    <li><strong>OpenAI.</strong> OpenAI does not use API data to train its models by default and keeps it for up to
+      30 days to detect abuse. <a href="https://openai.com/policies/privacy-policy/">OpenAI Privacy Policy</a>.</li>
+  </ul>
+
+  <h2>What we keep, and for how long</h2>
+  <ul>
+    <li>For each AI request: the device identifier, the date, which provider and model answered, how many tokens it
+      used and what it cost, and whether it succeeded. <strong>Not the text</strong> that was sent or the answer.</li>
+    <li>Each device's daily use count, a few usage events (such as a device reaching its daily limit), and
+      short-lived rate-limit counters (deleted after two days).</li>
+    <li>Licences: a one-way hash of the key, its last four characters, the devices it is on, and for Google Play
+      purchases, the purchase token and when the subscription ends.</li>
+  </ul>
+  <p>
+    We use this only to run the service: to count free uses, keep Pro working, stop abuse and keep costs in check.
+    We do not use it for advertising, and we do not sell or share it except with the providers named above.
+  </p>
+
+  <h2>Payments</h2>
+  <p>
+    Pro is sold through Google Play, which handles payment under
+    <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Manage or cancel your subscription in
+    Google Play.
+  </p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Turn off AI translation in Settings, and nothing you read leaves your device.</li>
+    <li>Stop screen capture at any time from Android's status bar, or by closing the floating button.</li>
+    <li>To delete what our server keeps about your device, write to us with the <em>Support ID</em> shown in
+      Settings › Licence (with advanced settings on); we will delete it.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Yomi-Snap is meant for people aged 18 and over, and is not directed at children.</p>
+
+  <h2>Security</h2>
+  <p>
+    Everything sent to our server travels over HTTPS. Device tokens and licence keys are stored only as hashes.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If we change what is read or sent, we will update this page and its date, and the app will ask again before
+    capturing your screen.
+  </p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: <a href="mailto:alavanta.deva.developer@gmail.com">alavanta.deva.developer@gmail.com</a></p>
+</main>
+</body>
+</html>
